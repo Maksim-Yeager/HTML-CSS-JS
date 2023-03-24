@@ -1,9 +1,19 @@
 body{
     background: rgb(166, 226, 117);
 }
+
 h1{
     color:white;
 }
+
 nav{
     display: block;
+}
+
+footer{
+    background-color:rgba(38, 114, 28, 0.671);
+}
+
+.contacts{
+    color:white;
 }

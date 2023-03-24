@@ -10,6 +10,10 @@ nav{
     display: block;
 }
 
+header{
+    background-color:rgba(38, 114, 28, 0.671);
+}
+
 footer{
     background-color:rgba(38, 114, 28, 0.671);
 }

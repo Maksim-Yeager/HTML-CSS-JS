@@ -2,22 +2,30 @@ body{
     background: rgb(166, 226, 117);
 }
 
-h1{
+.hello:hover{
     color:white;
 }
 
-nav{
+.nav{
     display: block;
 }
 
-header{
-    background-color:rgba(38, 114, 28, 0.671);
-}
-
-footer{
+.HeadOrFoot{
     background-color:rgba(38, 114, 28, 0.671);
 }
 
 .contacts{
     color:white;
+}
+
+footer div p:hover{
+    color:rgb(15, 70, 221);
+}
+
+.skillList:hover{
+    color:rgb(0, 0, 0);
+}
+
+.skillList li:hover{
+    color:rgb(235, 12, 205);
 }

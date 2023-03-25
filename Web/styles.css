@@ -1,17 +1,31 @@
 body{
     background: rgb(166, 226, 117);
+    padding: 0px;
+    margin: 0px;
+}
+
+header, footer, html{
+    border:0cap;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .hello:hover{
     color:white;
 }
 
-.nav{
+nav{
     display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a{
+    color:rgb(252, 98, 98);    
 }
 
 .HeadOrFoot{
-    background-color:rgba(38, 114, 28, 0.671);
+    background-color:rgb(38, 114, 28);
 }
 
 .contacts{
@@ -19,13 +33,33 @@ body{
 }
 
 footer div p:hover{
-    color:rgb(15, 70, 221);
+    color:rgb(102, 143, 255);
 }
 
-.skillList:hover{
-    color:rgb(0, 0, 0);
+.skillList{
+    border-left: 1px solid red;
 }
 
 .skillList li:hover{
     color:rgb(235, 12, 205);
+}
+
+#BorAndPadAndMar{
+    border: 3px solid rgb(0, 140, 255);
+    padding: 6px;
+    margin:0px 600px;
+}
+
+.footerPad{
+    border: 1px solid rgba(0,0,0,0);
+    padding: 6px 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+*:not(body):not(header):not(footer):not(html):not(nav){
+    margin: 10px;
 }

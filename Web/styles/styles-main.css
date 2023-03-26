@@ -1,3 +1,5 @@
+/*CSS-са е малко не подреден за сега.*/
+
 body{
     background: rgb(166, 226, 117);
     padding: 0px;
@@ -49,7 +51,7 @@ footer div p:hover{
 }
 
 #BorAndPadAndMar{
-    border: 3px solid rgb(0, 140, 255);
+    border: 3px solid rgb(38, 114, 28);
     padding: 6px;
     margin:0px 600px;
 }

@@ -1,0 +1,11 @@
+.menu{
+    display: none;
+}
+
+.menu.show{
+    display: block;
+}
+
+.menu-icon{
+    font-family: cursive;
+}

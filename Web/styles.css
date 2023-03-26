@@ -21,7 +21,11 @@ nav{
 }
 
 nav ul li a{
-    color:rgb(252, 98, 98);    
+    color:rgb(252, 98, 98);   
+}
+
+nav ul li{
+    display: inline; 
 }
 
 .HeadOrFoot{

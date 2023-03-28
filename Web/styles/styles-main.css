@@ -53,7 +53,8 @@ footer div p:hover{
 #BorAndPadAndMar{
     border: 3px solid rgb(38, 114, 28);
     padding: 6px;
-    margin:0px 600px;
+    margin: auto;
+    width: 280px
 }
 
 .footerPad{

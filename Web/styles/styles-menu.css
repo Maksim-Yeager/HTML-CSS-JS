@@ -3,7 +3,7 @@
 }
 
 .menu.show{
-    display: block;
+    display: inline-block;
 }
 
 .menu-icon{

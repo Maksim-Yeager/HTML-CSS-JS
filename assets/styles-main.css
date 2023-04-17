@@ -70,8 +70,10 @@ footer div p:hover{
     margin: 10px;
 }
 
-/*#timer{
+#timer{
     color: aliceblue;
     border: black 3px solid;
-    display: inline-block; 
-}*/
+    display: block;
+    float: right; 
+    font-weight: bold;
+}

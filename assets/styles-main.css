@@ -7,7 +7,6 @@ body{
 }
 
 header, footer, html{
-    border:0cap;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
@@ -54,7 +53,7 @@ footer div p:hover{
     border: 3px solid rgb(38, 114, 28);
     padding: 6px;
     margin: auto;
-    width: 275px;
+    width: 273px;
 }
 
 .footerPad{
@@ -70,3 +69,12 @@ footer div p:hover{
 *:not(body):not(header):not(footer):not(html):not(nav){
     margin: 10px;
 }
+
+#timer{
+    color: aliceblue;
+    border: black 3px solid;
+    display: block;
+    float: right; 
+    font-weight: bold;
+}
+

@@ -31,6 +31,7 @@ function startTimer()
     if(remainingTime === 0)
     {
       clearInterval(intervalID);
+      
       imageClock.classList.toggle('show');
       imageTime.classList.toggle('hide');
       button.classList.toggle('hide');

@@ -17,7 +17,8 @@ function startTimer()
     let seconds = remainingTime % 60;
     displayElement.textContent = `${minutes.toString().padStart(2,`0`)}:${seconds.toString().padStart(2,`0`)}`;
     
-    if(!document.body.contains(displayElement)) {
+    if(!document.body.contains(displayElement))
+    {
       document.body.appendChild(displayElement);
     }
   }
@@ -27,7 +28,8 @@ function startTimer()
     remainingTime--;
     updateDisplay();
 
-    if(remainingTime === 0) {
+    if(remainingTime === 0)
+    {
       clearInterval(intervalID);
       imageClock.classList.toggle('show');
       imageTime.classList.toggle('hide');

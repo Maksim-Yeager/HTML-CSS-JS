@@ -1,29 +1,41 @@
-let remainingTime = 120;
-let displayElement = document.getElementById("timer");
-let interevalID;
-
-function updateDisplay()
+function startTimer()
 {
-  let minutes = Math.floor(remainingTime / 60);
-  let seconds = remainingTime % 60;
-  displayElement.textContent = `${minutes.toString().padStart(2,`0`)}:${seconds.toString().padStart(2,`0`)}`;
+  let remainingTime = 10;
+  let displayElement = document.getElementById("timer");
+  let intervalID;
 
-  if(!document.body.contains(displayElement))
+  const button = document.querySelector('.button-timer');
+  button.classList.toggle('hide');
+
+  function updateDisplay()
   {
-    document.body.appendChild(displayElement);
-  }
-}
+    let minutes = Math.floor(remainingTime / 60);
+    let seconds = remainingTime % 60;
+    displayElement.textContent = `${minutes.toString().padStart(2,`0`)}:${seconds.toString().padStart(2,`0`)}`;
 
-function updateTimer()
-{
-  remainingTime--;
+    if(!document.body.contains(displayElement))
+    {
+      document.body.appendChild(displayElement);
+    }
+  }
+
+  function updateTimer()
+  {
+    remainingTime--;
     
-  updateDisplay();
-
-  if(remainingTime === 0)
-  {
-    clearInterval(interevalID);
+    updateDisplay();
+    
+    if(remainingTime === 0)
+    {
+      const button_show = document.querySelector('.button-timer');
+      //Your mistake are here.
+      button_show.classList.toggle('show');
+      //This line is wrong.
+      clearInterval(intervalID);
+    }
   }
+
+  intervalID = setInterval(updateTimer,1000);
 }
 
-interevalID = setInterval(updateTimer,1000);
+startTimer();

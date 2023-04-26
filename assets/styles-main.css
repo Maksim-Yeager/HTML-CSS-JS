@@ -69,5 +69,3 @@ footer div p:hover{
 *:not(body):not(header):not(footer):not(html):not(nav){
     margin: 10px;
 }
-
-

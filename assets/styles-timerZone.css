@@ -17,12 +17,10 @@
 }
 
 .time-up-img.hide{
-   /* width: 100px;*/
     display: none;
 }
 
 .time-up-img.show{
-   /* width: 100px;*/
     display: block;
 }
 
@@ -54,9 +52,14 @@
 }
 
 #timer-zone{
-    display: inline-block; 
-    vertical-align: top; 
+    /*vertical-align: top;*/
     background-color:rgba(255, 251, 0, 0.5);
-    width:300px;
     height:300px;
+    /*display: inline-flex;*/
+    /*justify-content: center;
+	align-items: center;*/
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

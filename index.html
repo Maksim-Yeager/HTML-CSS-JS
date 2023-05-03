@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Menu</title>
-
+        <link rel="stylesheet" href="assets/styles-timerZone.css">
         <link  rel="stylesheet" href="assets/styles-main.css">
         <link rel="stylesheet" href="assets/styles-menu.css">
         <link rel="icon" href="assets/burger-icon.png">
@@ -10,12 +10,9 @@
     </head>
     <body>
         <header class="HeadOrFoot">
-            <div id="timer"></div>
-            <script src="assets/countdown.js"></script>
-            
             <nav class="nav">
                 <div id="BorAndPadAndMar">
-                    <ul style="padding: 0;">
+                    <ul style="padding: 0; font-size: 18px;">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu-Burgers</a></li>
                     </ul>
@@ -29,17 +26,22 @@
                     I am from Bulgaria.<br>
                     I live in Ruse.</p>
             </article>
-
             <hr>
 
-            <div>
-                <img alt="" src="assets/ME.jpg" width="300" height="300" style="border-radius: 30px 0 30px 0;">
+            <img alt="" src="assets/ME.jpg" width="300" height="300" style="border-radius: 30px 0 30px 0;">
+
+            <div id="timer-zone">
+                <h1 style="align-items:start">Timer Zone: </h1>                
+                <div id="timer"></div>
+                <img src="assets/clock.png" alt="clock" class="timer-img">
+                <img src="assets/time-is-up.png" alt="Time is up" class="time-up-img">
+                <button class="button-timer" onclick="startTimer();">Restart the timer</button>
+                <script src="assets/countdown.js"></script>
             </div>
-          
+
             <hr>
-          
             <article>
-                <h2>My Skills and Experience</h2>
+                <h1>My Skills and Experience</h1>
                 <ul class="skillList">
                     <li>I can work with objects and classes</li>
                     <li>I understand data structures</li>

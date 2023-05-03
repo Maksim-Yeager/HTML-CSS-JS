@@ -69,12 +69,3 @@ footer div p:hover{
 *:not(body):not(header):not(footer):not(html):not(nav){
     margin: 10px;
 }
-
-#timer{
-    color: aliceblue;
-    border: black 3px solid;
-    display: block;
-    float: right; 
-    font-weight: bold;
-}
-

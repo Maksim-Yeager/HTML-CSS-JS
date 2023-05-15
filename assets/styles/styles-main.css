@@ -69,3 +69,69 @@ footer div p:hover{
 *:not(body):not(header):not(footer):not(html):not(nav){
     margin: 10px;
 }
+
+.timer-img{
+    width: 100px;
+    height: 100px;
+    display: none;
+    margin-right: 45px;
+    float: right;
+}
+
+.timer-img.show{
+    display: block;
+}
+
+.time-up-img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-right: 45px;
+    float: right;
+}
+
+.time-up-img.hide{
+    display: none;
+}
+
+.time-up-img.show{
+    display: block;
+}
+
+.button-timer{
+    display: block;
+    height: 48px;
+    width: 115px;
+    font-size: 12px;
+}
+
+#timer{
+    color: rgb(80, 0, 80);
+    border: black 3px solid;
+    display: inline-block;
+    font-weight: bold;
+    width: 90px;
+    height: 36px;
+    font-size: 36px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+#timer-zone{
+    background-color:rgba(255, 251, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu.show{
+    display: inline-block;
+}
+
+.menu-icon{
+    font-family: cursive;
+}

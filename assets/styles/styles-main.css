@@ -1,76 +1,100 @@
 /*CSS-са е малко не подреден за сега.*/
 
-body{
-    background: rgb(166, 226, 117);
+body {
+    background: linear-gradient(rgb(9, 233, 76), rgb(14, 174, 210));
     padding: 0px;
     margin: 0px;
 }
 
-header, footer, html{
+header,
+footer,
+html {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
-.hello:hover{
-    color:white;
+#hello:hover {
+    color: white;
 }
 
-nav{
+#hello {
+    margin: 0;
+}
+
+#information {
+    margin: 0;
+}
+
+nav {
     display: block;
     margin: 0px;
     padding: 0px;
 }
 
-nav ul li a{
-    color:rgb(252, 98, 98);   
+nav ul li a {
+    color: rgb(170, 28, 28);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li{
-    display: inline; 
+nav ul li {
+    display: inline;
 }
 
-.HeadOrFoot{
-    background-color:rgb(38, 114, 28);
+header {
+    background-color: rgb(39, 167, 78);
+    margin: 0;
+    border-radius: 0 0 90px 90px;
 }
 
-.contacts{
-    color:white;
+footer {
+    background-color: rgb(39, 120, 138);
+    margin: 0;
 }
 
-footer div p:hover{
-    color:rgb(102, 143, 255);
+#contacts {
+    color: white;
 }
 
-.skillList{
+#contacts:hover {
+    color: rgb(0, 0, 0);
+}
+
+.skillList {
     border-left: 1px solid red;
+    margin-bottom: 0;
 }
 
-.skillList li:hover{
-    color:rgb(235, 12, 205);
+.skillList li:hover {
+    color: rgb(235, 12, 205);
 }
 
-#BorAndPadAndMar{
-    border: 3px solid rgb(38, 114, 28);
+#skills {
+    margin-bottom: 0;
+}
+
+#BorAndPadAndMar {
     padding: 6px;
     margin: auto;
     width: 273px;
 }
 
-.footerPad{
-    border: 1px solid rgba(0,0,0,0);
+#footerPad {
+    border: 1px solid rgba(0, 0, 0, 0);
     padding: 6px 10px;
+    margin: 0;
 }
 
-.icon{
+.icon {
     width: 30px;
     height: 30px;
 }
 
-*:not(body):not(header):not(footer):not(html):not(nav){
+*:not(body):not(header):not(footer):not(html):not(nav) {
     margin: 10px;
 }
 
-.timer-img{
+.timer-img {
     width: 100px;
     height: 100px;
     display: none;
@@ -78,11 +102,11 @@ footer div p:hover{
     float: right;
 }
 
-.timer-img.show{
+.timer-img.show {
     display: block;
 }
 
-.time-up-img{
+.time-up-img {
     width: 100px;
     height: 100px;
     display: block;
@@ -90,22 +114,22 @@ footer div p:hover{
     float: right;
 }
 
-.time-up-img.hide{
+.time-up-img.hide {
     display: none;
 }
 
-.time-up-img.show{
+.time-up-img.show {
     display: block;
 }
 
-.button-timer{
+.button-timer {
     display: block;
     height: 48px;
     width: 115px;
     font-size: 12px;
 }
 
-#timer{
+#timer {
     color: rgb(80, 0, 80);
     border: black 3px solid;
     display: inline-block;
@@ -117,21 +141,26 @@ footer div p:hover{
     margin: 10px;
 }
 
-#timer-zone{
-    background-color:rgba(255, 251, 0, 0.5);
+#timer-zone {
+    background-color: rgba(255, 251, 0, 0.5);
     display: flex;
     justify-content: center;
     height: 150px;
 }
 
-.menu{
+.menu {
     display: none;
 }
 
-.menu.show{
+.menu.show {
     display: inline-block;
 }
 
-.menu-icon{
+.menu-icon {
     font-family: cursive;
+}
+
+main {
+    margin: 0px;
+
 }

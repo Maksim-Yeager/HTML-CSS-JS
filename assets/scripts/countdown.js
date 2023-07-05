@@ -1,5 +1,5 @@
 let remainingTime = 10;
-let displayElement = document.getElementById("timer");
+let displayElement = document.getElementsByClassName('timer');
 let intervalID;
 
 
@@ -12,11 +12,13 @@ function updateDisplay()
 {
   let minutes = Math.floor(remainingTime / 60);
   let seconds = remainingTime % 60;
-  displayElement.textContent = `${minutes.toString().padStart(2,`0`)}:${seconds.toString().padStart(2,`0`)}`;
-    
-  if(!document.body.contains(displayElement))
-  {
-    document.body.appendChild(displayElement);
+  for(let i = 0; i < displayElement.length; i++)
+  {  
+    displayElement[i].textContent = `${minutes.toString().padStart(2,`0`)}:${seconds.toString().padStart(2,`0`)}`;
+    if(!document.body.contains(displayElement[i]))
+    {
+      document.body.appendChild(displayElement[i]);
+    }
   }
 }
 
